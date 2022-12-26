@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DBFacultyinfoDataSet1" targetNamespace="http://tempuri.org/DBFacultyinfoDataSet1.xsd" xmlns:mstns="http://tempuri.org/DBFacultyinfoDataSet1.xsd" xmlns="http://tempuri.org/DBFacultyinfoDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="DBFacultyinfoConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="DBFacultyinfoConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.MyAccess.Properties.Settings.GlobalReference.Default.DBFacultyinfoConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="DBFacultyinfoTableAdapter" GeneratorDataComponentClassName="DBFacultyinfoTableAdapter" Name="DBFacultyinfo" UserDataComponentName="DBFacultyinfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="DBFacultyinfoConnectionString (Settings)" DbObjectName="DBFacultyinfo.dbo.DBFacultyinfo" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT Name, ID, Department, [Room Number] FROM dbo.DBFacultyinfo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Name" DataSetColumn="Name" />
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Department" DataSetColumn="Department" />
+              <Mapping SourceColumn="Room Number" DataSetColumn="Room Number" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DBFacultyinfoDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="DBFacultyinfoDataSet1" msprop:Generator_DataSetName="DBFacultyinfoDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DBFacultyinfo" msprop:Generator_RowEvHandlerName="DBFacultyinfoRowChangeEventHandler" msprop:Generator_RowDeletedName="DBFacultyinfoRowDeleted" msprop:Generator_RowDeletingName="DBFacultyinfoRowDeleting" msprop:Generator_RowEvArgName="DBFacultyinfoRowChangeEvent" msprop:Generator_TablePropName="DBFacultyinfo" msprop:Generator_RowChangedName="DBFacultyinfoRowChanged" msprop:Generator_RowChangingName="DBFacultyinfoRowChanging" msprop:Generator_TableClassName="DBFacultyinfoDataTable" msprop:Generator_RowClassName="DBFacultyinfoRow" msprop:Generator_TableVarName="tableDBFacultyinfo" msprop:Generator_UserTableName="DBFacultyinfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" msprop:Generator_ColumnPropNameInRow="Name" msprop:Generator_ColumnPropNameInTable="NameColumn" msprop:Generator_ColumnVarNameInTable="columnName" msprop:Generator_UserColumnName="Name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_UserColumnName="ID">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Department" msprop:Generator_ColumnPropNameInRow="Department" msprop:Generator_ColumnPropNameInTable="DepartmentColumn" msprop:Generator_ColumnVarNameInTable="columnDepartment" msprop:Generator_UserColumnName="Department">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Room_x0020_Number" msprop:Generator_ColumnPropNameInRow="Room_Number" msprop:Generator_ColumnPropNameInTable="Room_NumberColumn" msprop:Generator_ColumnVarNameInTable="columnRoom_Number" msprop:Generator_UserColumnName="Room Number">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
